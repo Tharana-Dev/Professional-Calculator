@@ -1,4 +1,4 @@
-```markdown
+
 # Professional Calculator
 
 A fully‑featured desktop calculator application built with Python and NiceGUI.  
@@ -47,26 +47,18 @@ It combines a hand‑written expression engine (tokenizer → parser → evaluat
 ### From Source
 
 1. **Clone the repository**
-   ```bash
    git clone https://github.com/Tharana-Dev/professional-calculator.git
    cd professional-calculator
-   ```
 
 2. **Install dependencies**
-   ```bash
    pip install -r requirements.txt
-   ```
 
 3. **Run the application**
-   ```bash
    set PYTHONPATH=src && python -m calculator.gui
-   ```
    (On PowerShell: `$env:PYTHONPATH="src"; python -m calculator.gui`)
 
 4. **Run the backend tests**
-   ```bash
    pytest tests/
-   ```
 
 ### As a Standalone Executable (Windows)
 
@@ -76,8 +68,6 @@ Double‑click `Professional Calculator.exe` to launch without any terminal or P
 ---
 
 ## Project Structure
-
-```
 Calculator/
 ├── src/
 │   └── calculator/
@@ -102,9 +92,6 @@ Calculator/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
-
----
 
 ## Quality Pipeline
 
@@ -145,4 +132,3 @@ All checks pass with zero errors:
 
 This project is open source. You are free to use, modify, and share it.  
 A formal license will be added soon.
-```
