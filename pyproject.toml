@@ -1,0 +1,29 @@
+[tool.mypy]
+mypy_path = "src"
+python_version = "3.12"
+strict = true
+
+[tool.isort]
+profile = "black"
+src_paths = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  | \.git
+)/
+'''
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203", "W503"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
